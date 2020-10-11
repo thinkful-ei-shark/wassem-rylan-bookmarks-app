@@ -8,19 +8,10 @@ export default class Bookmark extends React.Component {
         sections: []
     };
 
-    state = {
-        activeSectionIndex: null
-    }
-
-    handleSetActiveSection = (sectionIndex) => {
-        this.setState({ activeSectionIndex: sectionIndex });
-        console.log(this.state.activeSectionIndex);
-    }
-
     render() {
         return (
             <div className="bookmark" >
-                <div className="bookmark__row" onClick={() => this.handleSetActiveSection(this.props.index)}>
+                <div className="bookmark__row" onClick={() => this.props.handleSetActiveSection(this.props.index)}>
                     <div className="bookmark__title">
                         <a
                             href={this.props.url}
@@ -32,7 +23,7 @@ export default class Bookmark extends React.Component {
                     <Rating value={this.props.rating} />
                 </div>
                 <div className="bookmark__description">
-                    {(this.state.activeSectionIndex === this.props.index) && <p>{this.props.desc}</p>}
+                    {(this.props.activeSectionIndex === this.props.index) && <p>{this.props.desc}</p>}
                 </div>
             </div>
         )
