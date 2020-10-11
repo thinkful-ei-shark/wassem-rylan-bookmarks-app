@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/css/main.17dbcf05.chunk.css",
-    "main.js": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/main.6214ad50.chunk.js",
-    "main.js.map": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/main.6214ad50.chunk.js.map",
-    "runtime-main.js": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/runtime-main.069a2e42.js",
-    "runtime-main.js.map": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/runtime-main.069a2e42.js.map",
-    "static/js/2.97dcab7b.chunk.js": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js",
-    "static/js/2.97dcab7b.chunk.js.map": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js.map",
-    "index.html": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/index.html",
-    "precache-manifest.fe327aedcc07594455318f508a6026a0.js": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/precache-manifest.fe327aedcc07594455318f508a6026a0.js",
-    "service-worker.js": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/service-worker.js",
-    "static/css/main.17dbcf05.chunk.css.map": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/css/main.17dbcf05.chunk.css.map",
-    "static/js/2.97dcab7b.chunk.js.LICENSE.txt": "/thinkful-ei-shark/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js.LICENSE.txt"
+    "main.css": "/wassem-rylan-bookmarks-app/static/css/main.17dbcf05.chunk.css",
+    "main.js": "/wassem-rylan-bookmarks-app/static/js/main.6ad3c133.chunk.js",
+    "main.js.map": "/wassem-rylan-bookmarks-app/static/js/main.6ad3c133.chunk.js.map",
+    "runtime-main.js": "/wassem-rylan-bookmarks-app/static/js/runtime-main.be03c00a.js",
+    "runtime-main.js.map": "/wassem-rylan-bookmarks-app/static/js/runtime-main.be03c00a.js.map",
+    "static/js/2.97dcab7b.chunk.js": "/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js",
+    "static/js/2.97dcab7b.chunk.js.map": "/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js.map",
+    "index.html": "/wassem-rylan-bookmarks-app/index.html",
+    "precache-manifest.02e27d4c8e0e8a65dd40257b956e9983.js": "/wassem-rylan-bookmarks-app/precache-manifest.02e27d4c8e0e8a65dd40257b956e9983.js",
+    "service-worker.js": "/wassem-rylan-bookmarks-app/service-worker.js",
+    "static/css/main.17dbcf05.chunk.css.map": "/wassem-rylan-bookmarks-app/static/css/main.17dbcf05.chunk.css.map",
+    "static/js/2.97dcab7b.chunk.js.LICENSE.txt": "/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.069a2e42.js",
+    "static/js/runtime-main.be03c00a.js",
     "static/js/2.97dcab7b.chunk.js",
     "static/css/main.17dbcf05.chunk.css",
-    "static/js/main.6214ad50.chunk.js"
+    "static/js/main.6ad3c133.chunk.js"
   ]
 }
