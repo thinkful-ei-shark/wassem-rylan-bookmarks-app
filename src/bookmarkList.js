@@ -13,8 +13,7 @@ export default class BookmarkList extends Component {
     }
 
     handleSetActiveSection = (sectionIndex) => {
-        this.setState({ activeSectionIndex: sectionIndex });
-        console.log(this.state.activeSectionIndex);
+        (this.state.activeSectionIndex === sectionIndex) ? this.setState({ activeSectionIndex: null }) : this.setState({ activeSectionIndex: sectionIndex });
     }
 
     render() {
