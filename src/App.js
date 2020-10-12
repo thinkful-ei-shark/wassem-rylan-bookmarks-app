@@ -53,8 +53,8 @@ class App extends Component {
       });
   }
 
-  handleDelete = (e) => {
-    let id = e.target.id;
+  handleDelete = (id) => {
+    
     const url = `https://thinkful-list-api.herokuapp.com/rylan/bookmarks/${id}`;
     console.log(url);
     
@@ -77,7 +77,9 @@ class App extends Component {
                 error: err.message
             });
         });
-        this.render();
+
+    //this.render();
+    //this.forceUpdate();
   }
 
 
