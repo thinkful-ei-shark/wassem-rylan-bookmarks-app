@@ -54,12 +54,9 @@ class App extends Component {
   }
 
   handleDelete = (e) => {
-    //e.preventDefault();
-    console.log(e.target.value);
-    //console.log(id);
-    //let id = e.currrentTarget.id;
-    /*
+    let id = e.target.id;
     const url = `https://thinkful-list-api.herokuapp.com/rylan/bookmarks/${id}`;
+    console.log(url);
     const options = {
         method: 'DELETE',
         headers: {
@@ -79,7 +76,6 @@ class App extends Component {
                 error: err.message
             });
         });
-       */
   }
 
 

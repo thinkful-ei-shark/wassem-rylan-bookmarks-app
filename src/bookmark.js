@@ -24,7 +24,7 @@ export default class Bookmark extends React.Component {
                 </div>
                 <div className="bookmark__description">
                     <div>{(this.props.activeSectionIndex === this.props.index) && <p>{this.props.desc}</p>}</div>
-                    <button className="delete_btn" ><DeleteBtn value={this.props.id} onClick={(e) => this.props.handleDelete(e)}/></button>
+                    <DeleteBtn className="delete_btn" id={this.props.id} onClick={(e) => this.props.handleDelete(e)} />
                 </div>
             </div>
         )
