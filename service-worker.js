@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/wassem-rylan-bookmarks-app/precache-manifest.6218a5a1bac9fb3d742f45609112a02a.js"
+  "/wassem-rylan-bookmarks-app/precache-manifest.7e312da8b9c411e806058590f6c669c1.js"
 );
 
 self.addEventListener('message', (event) => {
