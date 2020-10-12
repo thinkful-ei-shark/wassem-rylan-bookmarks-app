@@ -40,9 +40,9 @@ class App extends Component {
       .then(res => res.json())
       .then(data => {
         //concatenates onto store 
-        let joined = this.state.bookmarks.concat(data);
+        //let joined = this.state.bookmarks.concat(data);
         this.setState({
-          bookmarks: joined,
+          bookmarks: data,
           error: null
         });
       })
@@ -57,6 +57,7 @@ class App extends Component {
     let id = e.target.id;
     const url = `https://thinkful-list-api.herokuapp.com/rylan/bookmarks/${id}`;
     console.log(url);
+    
     const options = {
         method: 'DELETE',
         headers: {
@@ -76,6 +77,7 @@ class App extends Component {
                 error: err.message
             });
         });
+        this.render();
   }
 
 
