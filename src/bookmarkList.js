@@ -20,6 +20,7 @@ export default class BookmarkList extends Component {
         const bookmarks = this
             .props
             .bookmarks
+            .filter(bookmark => bookmark.rating >= this.props.selectValue)
             .map((bookmark, i) => <Bookmark {...bookmark} 
                                     index={i} 
                                     key={i} 

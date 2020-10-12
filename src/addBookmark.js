@@ -84,28 +84,31 @@ class AddBookmark extends Component {
           <label htmlFor="title">Title:</label>
           <input 
             type="text" 
-            name="title" 
+            name="title"
+            required="true" 
             id="title" 
             placeholder="Title"
             value={this.state.title}
             onChange={e => this.titleChanged(e.target.value)}/>
           <label htmlFor="url">Url:</label>  
           <input 
-            type="text" 
+            type="url" 
             name="url" 
             id="url" 
             placeholder="url"
             value={this.state.url}
             onChange={e => this.urlChanged(e.target.value)}/>
           <label htmlFor="description">Description:</label>  
-          <textarea 
+          <textarea
+            required="true" 
             name="description" 
             id="description" 
             placeholder="description"
             value={this.state.desc}
             onChange={e => this.descriptionChanged(e.target.value)}/>
           <label htmlFor="rating">Rating: </label>
-          <input 
+          <input
+            required="true" 
             type="number" 
             name="rating" 
             id="rating" 

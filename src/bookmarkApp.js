@@ -27,7 +27,7 @@ class BookmarkApp extends Component {
                     <AddButton showForm={this.props.showForm} />
                     <Filter onSelectChange={this.onSelectChange} />
                 </div>
-                <BookmarkList bookmarks={this.props.bookmarks} />
+                <BookmarkList bookmarks={this.props.bookmarks} selectValue={this.state.selectValue}/>
             </div>
         );
     }
