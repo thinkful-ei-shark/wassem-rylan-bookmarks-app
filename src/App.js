@@ -8,11 +8,12 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bookmarks: [{ 'title': 'Google', 'url': 'http://google.com', 'desc': 'a search engine', 'rating': 1 },
-      { 'title': 'Nexflix', 'url': 'https://www.netflix.com/', 'desc': 'movie website', 'rating': 2 },
-      { 'title': 'Facebook', 'url': 'https://www.facebook.com/', 'desc': 'social networking', 'rating': 3 },
-      { 'title': 'Github', 'url': 'https://github.com/', 'desc': 'code repository', 'rating': 4 },
-      { 'title': 'MDN', 'url': 'https://developer.mozilla.org/', 'desc': 'web tech docs', 'rating': 5 }],
+      bookmarks: [
+      { 'id': 'a1', 'title': 'Google', 'url': 'http://google.com', 'desc': 'a search engine', 'rating': 1 },
+      { 'id': 'b2', 'title': 'Nexflix', 'url': 'https://www.netflix.com/', 'desc': 'movie website', 'rating': 2 },
+      { 'id': 'c3', 'title': 'Facebook', 'url': 'https://www.facebook.com/', 'desc': 'social networking', 'rating': 3 },
+      { 'id': 'd4', 'title': 'Github', 'url': 'https://github.com/', 'desc': 'code repository', 'rating': 4 },
+      { 'id': 'e5', 'title': 'MDN', 'url': 'https://developer.mozilla.org/', 'desc': 'web tech docs', 'rating': 5 }],
       showAddForm: false
     };
   }
