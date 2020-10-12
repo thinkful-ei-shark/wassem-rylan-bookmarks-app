@@ -8,7 +8,8 @@ class AddBookmark extends Component {
       title: "",
       url: "",
       desc: "",
-      rating: 1
+      rating: 1,
+      id: ""
     };
   }
 
@@ -38,7 +39,7 @@ class AddBookmark extends Component {
 
   handleSubmit(e) {
     e.preventDefault();
-    const bookmark = (({title, url, desc, rating}) => ({title, url, desc, rating}))(this.state);
+    const bookmark = (({title, url, desc, rating, id}) => ({title, url, desc, rating, id}))(this.state);
     const url ='https://thinkful-list-api.herokuapp.com/rylan/bookmarks';
     const options = {
       method: 'POST',
@@ -60,7 +61,8 @@ class AddBookmark extends Component {
           title: "",
           url: "",
           description: "",
-          rating: 1
+          rating: 1,
+          id: ""
         });
         this.props.handleAdd(bookmark);
       })

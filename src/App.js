@@ -7,6 +7,7 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+    this.handleDelete = this.handleDelete.bind(this);
     this.state = {
       bookmarks: [
       { 'id': 'a1', 'title': 'Google', 'url': 'http://google.com', 'desc': 'a search engine', 'rating': 1 },
@@ -38,6 +39,7 @@ class App extends Component {
       })
       .then(res => res.json())
       .then(data => {
+        //concatenates onto store 
         let joined = this.state.bookmarks.concat(data);
         this.setState({
           bookmarks: joined,
@@ -50,6 +52,36 @@ class App extends Component {
         });
       });
   }
+
+  handleDelete = (e) => {
+    //e.preventDefault();
+    console.log(e.target.value);
+    //console.log(id);
+    //let id = e.currrentTarget.id;
+    /*
+    const url = `https://thinkful-list-api.herokuapp.com/rylan/bookmarks/${id}`;
+    const options = {
+        method: 'DELETE',
+        headers: {
+            "Content-Type": "application/json",
+        }
+    };
+
+    fetch(url, options)
+        .then(res => {
+            if (!res.ok) {
+                throw new Error('Something went wrong, please try again later');
+            }
+            return res.json();
+        })
+        .catch(err => {
+            this.setState({
+                error: err.message
+            });
+        });
+       */
+  }
+
 
   setShowAddForm(show) {
     this.setState({
@@ -69,7 +101,9 @@ class App extends Component {
           ? <AddBookmark 
                  showForm={show => this.setShowAddForm(show)} 
                  handleAdd={bookmark => this.addBookmark(bookmark)}/>
-          : <BookmarkApp bookmarks={this.state.bookmarks} showForm={show => this.setShowAddForm(show)}/>; 
+          : <BookmarkApp bookmarks={this.state.bookmarks} 
+                         showForm={show => this.setShowAddForm(show)} 
+                         handleDelete={e => this.handleDelete(e)}/>; 
 
     return (
       <div className="App">

@@ -74,4 +74,11 @@ code {
 .bookmark__description {
   text-align: left;
   font-size: 0.95em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete_btn {
+  max-width: 30px;
+  max-height: 30px;
 }

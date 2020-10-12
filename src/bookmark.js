@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.css';
 import Rating from './rating';
-
+import { ReactComponent as DeleteBtn } from './assets/recycle-bin.svg';
 export default class Bookmark extends React.Component {
 
     static defaultProps = {
@@ -23,7 +23,8 @@ export default class Bookmark extends React.Component {
                     <Rating value={this.props.rating} />
                 </div>
                 <div className="bookmark__description">
-                    {(this.props.activeSectionIndex === this.props.index) && <p>{this.props.desc}</p>}
+                    <div>{(this.props.activeSectionIndex === this.props.index) && <p>{this.props.desc}</p>}</div>
+                    <button className="delete_btn" ><DeleteBtn value={this.props.id} onClick={(e) => this.props.handleDelete(e)}/></button>
                 </div>
             </div>
         )

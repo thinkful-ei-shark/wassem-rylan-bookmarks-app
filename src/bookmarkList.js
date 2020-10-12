@@ -9,7 +9,7 @@ export default class BookmarkList extends Component {
 
     constructor(props) {
         super(props)
-        this.handleSetActiveSection = this.handleSetActiveSection.bind(this)
+        this.handleSetActiveSection = this.handleSetActiveSection.bind(this);
     }
 
     handleSetActiveSection = (sectionIndex) => {
@@ -25,7 +25,8 @@ export default class BookmarkList extends Component {
                                     index={i} 
                                     key={i} 
                                     handleSetActiveSection={this.handleSetActiveSection}
-                                    activeSectionIndex={this.state.activeSectionIndex}/>);
+                                    activeSectionIndex={this.state.activeSectionIndex}
+                                    handleDelete={this.props.handleDelete}/>);
         return (
             <div className="bookmarkList">
                 {bookmarks}
