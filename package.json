@@ -2,7 +2,7 @@
   "name": "my_bookmarks",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dryland33.github.io/wassem-rylan-bookmarks-app/",
+  "homepage": "https://thinkful-ei-shark.github.io/wassem-rylan-bookmarks-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
