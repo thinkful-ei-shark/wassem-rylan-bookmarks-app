@@ -5,18 +5,32 @@ import AddButton from './addButton';
 import Filter from './filter';
 
 class BookmarkApp extends Component {
-  render() {
-    return (
-      <div className="bookmarkApp">
-        <h2>My Bookmarks:</h2>
-        <div className="controls">
-          <AddButton showForm={this.props.showForm}/>
-          <Filter/>
-        </div>
-        <BookmarkList bookmarks={this.props.bookmarks}/>
-      </div>
-    );
-  }
+    state = {
+        selectValue: 0
+    }
+
+    constructor(props) {
+        super(props);
+        this.onSelectChange = this.onSelectChange.bind(this);
+    }
+
+    onSelectChange = e => {
+        this.setState({ selectValue: e.target.value });
+        console.log(e.target.value);
+    }
+
+    render() {
+        return (
+            <div className="bookmarkApp">
+                <h2>My Bookmarks:</h2>
+                <div className="controls">
+                    <AddButton showForm={this.props.showForm} />
+                    <Filter onSelectChange={this.onSelectChange} />
+                </div>
+                <BookmarkList bookmarks={this.props.bookmarks} />
+            </div>
+        );
+    }
 }
 
 export default BookmarkApp;
