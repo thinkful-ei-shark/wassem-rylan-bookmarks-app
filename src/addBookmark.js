@@ -1,7 +1,8 @@
 import React, { Component } from  'react';
 import './index.css';
+import cuid from 'cuid'; 
 
-class AddBookmark extends Component {
+export default class AddBookmark extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,11 +38,18 @@ class AddBookmark extends Component {
     });
   }
 
+  setId(id) {
+    this.setState({
+      id
+    });
+  }
+
   handleSubmit(e) {
     e.preventDefault();
+    this.setId(cuid()); 
     const bookmark = (({title, url, desc, rating, id}) => ({title, url, desc, rating, id}))(this.state);
     const url ='https://thinkful-list-api.herokuapp.com/rylan/bookmarks';
-    const options = {
+    let options = {
       method: 'POST',
       body: JSON.stringify(bookmark),
       headers: {
@@ -87,13 +95,14 @@ class AddBookmark extends Component {
           <input 
             type="text" 
             name="title"
-            required="true" 
+            required={true}
             id="title" 
             placeholder="Title"
             value={this.state.title}
             onChange={e => this.titleChanged(e.target.value)}/>
           <label htmlFor="url">Url:</label>  
-          <input 
+          <input
+            required={true} 
             type="url" 
             name="url" 
             id="url" 
@@ -102,7 +111,7 @@ class AddBookmark extends Component {
             onChange={e => this.urlChanged(e.target.value)}/>
           <label htmlFor="description">Description:</label>  
           <textarea
-            required="true" 
+            required={true} 
             name="description" 
             id="description" 
             placeholder="description"
@@ -110,7 +119,7 @@ class AddBookmark extends Component {
             onChange={e => this.descriptionChanged(e.target.value)}/>
           <label htmlFor="rating">Rating: </label>
           <input
-            required="true" 
+            required={true}
             type="number" 
             name="rating" 
             id="rating" 
@@ -128,5 +137,3 @@ class AddBookmark extends Component {
     );
   }
 }
-
-export default AddBookmark;

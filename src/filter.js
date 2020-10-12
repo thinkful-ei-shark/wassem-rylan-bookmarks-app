@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css';
 
-class Filter extends Component {
+export default class Filter extends Component {
   state = {
     value: null
   }
@@ -19,5 +19,3 @@ class Filter extends Component {
     );
   }
 } 
-
-export default Filter;
