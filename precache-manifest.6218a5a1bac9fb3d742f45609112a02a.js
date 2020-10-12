@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e2ac20f6e25e3c3a3b81044dac5efd1",
+    "revision": "5bc9c26f57864835690dd6bc5a72068b",
     "url": "/wassem-rylan-bookmarks-app/index.html"
   },
   {
-    "revision": "7db549adeb0c09c20a1d",
+    "revision": "6c78a167ae566f083132",
     "url": "/wassem-rylan-bookmarks-app/static/css/main.17dbcf05.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/wassem-rylan-bookmarks-app/static/js/2.97dcab7b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7db549adeb0c09c20a1d",
-    "url": "/wassem-rylan-bookmarks-app/static/js/main.6ad3c133.chunk.js"
+    "revision": "6c78a167ae566f083132",
+    "url": "/wassem-rylan-bookmarks-app/static/js/main.adade447.chunk.js"
   },
   {
     "revision": "5f1dc2ccb3d3d2566c40",
